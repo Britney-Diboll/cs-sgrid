@@ -8,29 +8,25 @@ body {
   font: 16px / 1 sans-serif;
 }
 
-.container {
+.container{
   display: grid;
-
-  grid-template-areas:
-    "header header header"
-    "nav content side"
-    "footer footer footer";
-
-  grid-template-columns: 200px 1fr 200px;
-  grid-template-rows: auto 1fr auto;
-  grid-gap: 10px;
-
-  height: 100vh;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  background-color: rgb(196, 190, 190);
 }
 
-header {
-  grid-area: header;
+.img{
+  padding:10px;
 }
 
-main {
-  grid-area: content;
+a {
+  color: black;
+  text-decoration-line: none;
 }
 
-footer {
-  grid-area: footer;
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  padding: 1em;
 }
